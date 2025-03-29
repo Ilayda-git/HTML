@@ -373,3 +373,122 @@ header p {
     font-size: 15px;
     color: black; 
 }
+
+
+#restaurant {
+    display: flex;
+    padding: 10% 10%;
+    gap: 5vh;
+}
+
+#restaurant  .grande-image {
+    flex: 1;}
+
+#restaurant  .grande-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #c1b086;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+}
+
+#restaurant .reste {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+#restaurant .reste span{
+    display: block;
+    border-top: 5px solid #c1b086;
+    width: 13vh; 
+}
+
+#restaurant  .text h2 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 10px;
+}
+#restaurant  .text p {
+    font-size: 16px;
+    color: gray;
+    padding-left: 6vh;
+}
+
+#restaurant .text button { 
+    position: relative;
+    left: 90%;
+
+    background: #c1b086;
+    border: solid oldlace;
+    align-self: flex-end; 
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#restaurant .text button a {
+    color: white;
+    text-decoration: none;
+}
+
+#restaurant  .text button:hover {
+    background: #664f14;
+}
+
+#restaurant  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+#restaurant .img-box {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #c1b086;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.741);
+    transition: transform 0.3s ease-in-out;
+}
+
+#restaurant  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#restaurant  .img-box:hover {
+    transform: scale(1.03);
+}
+
+#restaurant  .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(193, 161, 119, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}
+
+#restaurant  .overlay:hover {
+    opacity: 1;
+}
+
+#restaurant  .overlay h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#restaurant  .overlay p {
+    font-size: 15px;
+}
