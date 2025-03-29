@@ -80,3 +80,93 @@ header p {
     position: relative;
     z-index: 1;
 }
+
+
+#amenities {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10%;
+    background: #fff;
+}
+
+#amenities img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: 0;
+}
+
+#amenities .tableau {
+    z-index: 1;
+    background: #3f9cc17e;
+    color: #fff;
+    padding: 5% 5%;
+    border-radius: 30px;
+    width: 50%;
+    height: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid #c1b086;
+    
+}
+
+#amenities .tableau h2 {
+    font-size: 20px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+#amenities .tableau p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    opacity: 0.9;
+    margin-bottom: 10%;
+}
+
+#amenities .amenities-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15%;
+}
+
+#amenities .amenity {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+#amenities .amenity i {
+    font-size: 20px; 
+    margin-right: 20%; 
+    color: white;
+}
+
+#amenities .tableau:hover {
+    background: #3f9cc1de
+}
+
+#amenities button{
+    background: #c1b086;
+    border: solid oldlace;
+    align-self: flex-end; /* Place le bouton à droite */
+    margin-bottom: 210px;
+    margin-right: -25px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#amenities button a {
+    text-decoration: none;
+    color: white;
+}
+
+#amenities button:hover {
+    background: #664f14;
+}
