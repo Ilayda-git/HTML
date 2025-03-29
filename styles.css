@@ -80,3 +80,94 @@ header p {
     position: relative;
     z-index: 1;
 }
+
+
+#gallery {
+    height: 100%; 
+    padding: 10% 10%;  
+    background: white;
+}
+
+#gallery .text p{
+    width: 10%;
+    border: 2px solid #c1b086;
+    margin-bottom: 2%;
+}
+
+#gallery .text span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: gray;
+}
+
+#gallery .text h2 {
+    font-size: 30px;
+    color: #6a6868;
+    margin-bottom: 40px;
+}
+
+#gallery .text button {
+    position: relative;
+    left: 90%;
+    top: -30px;
+    background: #c1b086;
+    border: solid oldlace;
+    padding: 12px 25px;
+    font-size: 15px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#gallery .text button a {
+    color: white;
+    text-decoration: none;
+}
+
+#gallery .text button:hover {
+    background: #664f14;
+}
+
+#gallery .slider input {
+    display: none;
+}
+
+#gallery  .slider .cards {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    perspective: 1200px;
+}
+
+#gallery  .slider .card {
+    width: 70px;
+    height: 600px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 3px solid #c1b086;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.633);
+    transition: all 1s ease;
+    transform: scale(1);
+    opacity: 0.7;
+    cursor: pointer;
+}
+#gallery  .slider .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#s1:checked ~ .cards label:nth-child(1),
+#s2:checked ~ .cards label:nth-child(2),
+#s3:checked ~ .cards label:nth-child(3),
+#s4:checked ~ .cards label:nth-child(4),
+#s5:checked ~ .cards label:nth-child(5),
+#s6:checked ~ .cards label:nth-child(6),
+#s7:checked ~ .cards label:nth-child(7),
+#s8:checked ~ .cards label:nth-child(8) {
+    width: 700px;
+    transform: scale(1);
+    opacity: 1;
+    border:2px solid black;
+}
