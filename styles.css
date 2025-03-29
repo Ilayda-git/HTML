@@ -80,3 +80,101 @@ header p {
     position: relative;
     z-index: 1;
 }
+
+
+#about {
+    height: 100vh; 
+    padding: 10%; 
+    display: flex; 
+    align-items: center; 
+    background: white;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#about .images {
+    position: relative;
+    width: 50%;
+}
+
+#about .grand {
+    width: 50%;
+    border-radius: 15px;
+    border: 3px solid #c1b086;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.26);
+    transition: transform 0.5s ease-in-out;
+}
+
+#about .petit {
+    position: absolute;
+    bottom: -10%;
+    right: 30%;
+    width: 40%;
+    border-radius: 15px;
+    border: 3px solid #c1b086;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.26);
+    transition: transform 0.4s ease-in-out;
+}
+
+#about .text {
+    width: 50%;
+}
+
+#about .text h2 {
+    width: 15%;
+    border: 2px solid #c1b086;
+    }
+
+#about .text span {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: rgba(79, 77, 77, 0.604);
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+#about .text h1 {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: #0c0b0be0;
+    margin-bottom: 5%;
+}
+
+#about .text p {
+    font-size: 15px;
+    color: rgba(79, 77, 77, 0.604);
+    line-height: 1.5;
+    margin-bottom: 5%;
+    padding-left: 50px;
+}
+
+#about .images img:hover {
+    transform: scale(1.4); 
+}
+
+#about button{
+    background: #c1b086;
+    border: solid oldlace;
+    align-self: flex-end; /* Place le bouton à droite */
+    margin-bottom: 210px;
+    margin-right: -25px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#about button a {
+    text-decoration: none;
+    color: white;
+}
+
+#about button:hover {
+    background: #664f14;
+}
